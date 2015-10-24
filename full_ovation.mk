@@ -20,6 +20,9 @@
 # product configuration (apps).
 #
 
+# Use 48 kHz UI sounds
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage13_48.mk)
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 # This is where we'd set a backup provider if we had one
