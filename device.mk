@@ -48,10 +48,10 @@ ADDITIONAL_BUILD_PROPERTIES += ro.sf.lcd_density=260
 
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heapgrowthlimit=144m \
-    dalvik.vm.heapsize=464m \
+    dalvik.vm.heapgrowthlimit=128m \
+    dalvik.vm.heapsize=448m \
     dalvik.vm.heaptargetutilization=0.75 \
-    dalvik.vm.heapminfree=512k \
+    dalvik.vm.heapminfree=2m \
     dalvik.vm.heapmaxfree=8m
 
 $(call inherit-product-if-exists, vendor/bn/hd-common/hd-common-vendor.mk)
