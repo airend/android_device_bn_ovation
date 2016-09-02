@@ -28,7 +28,9 @@ TARGET_BOOTLOADER_BOARD_NAME := ovation
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := $(COMMON_FOLDER)/boot.mk
 
+ifneq (,$(strip $(wildcard $(TARGET_KERNEL_SOURCE)/arch/arm/configs/android_ovation_defconfig)))
 TARGET_KERNEL_VARIANT_CONFIG := android_ovation_defconfig
+endif
 
 # Recovery
 BOARD_RECOVERY_SWIPE := true
