@@ -32,6 +32,8 @@ ifneq (,$(strip $(wildcard $(TARGET_KERNEL_SOURCE)/arch/arm/configs/android_ovat
 TARGET_KERNEL_VARIANT_CONFIG := android_ovation_defconfig
 endif
 
+BOARD_KERNEL_CMDLINE += omapfb.fb_opt=-1,-1,-1,1,1920,1280
+
 # Recovery
 BOARD_RECOVERY_SWIPE := true
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../$(COMMON_FOLDER)/recovery/recovery_keys.c
