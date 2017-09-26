@@ -47,7 +47,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_AAPT_CONFIG := xlarge hdpi
 
 # LCD density
-ADDITIONAL_BUILD_PROPERTIES += ro.sf.lcd_density=260
+PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=260
 
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapstartsize=8m \
