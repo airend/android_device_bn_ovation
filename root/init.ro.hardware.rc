@@ -1,7 +1,2 @@
 import init.hd-common.rc
 import init.${ro.hardware}.usb.rc
-
-on fs
-    # mount partitions
-    mount_all /fstab.ovation
-    swapon_all /fstab.ovation
